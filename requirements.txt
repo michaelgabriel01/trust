@@ -1,0 +1,4 @@
+django
+prettyconf
+whitenoise
+dj_database_url
