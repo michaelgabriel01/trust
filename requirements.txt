@@ -1,4 +1,5 @@
 django
-prettyconf
-whitenoise
 dj_database_url
+prettyconf
+gunicorn
+whitenoise
