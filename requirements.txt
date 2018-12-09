@@ -1,6 +1,8 @@
-django
-dj_database_url
-gunicorn
-prettyconf
-psycopg2-binary
-whitenoise
+Django==2.1.4
+dj-database-url==0.5.0
+gunicorn==19.7.1
+pytz==2018.4
+prettyconf==1.2.3
+psycopg2-binary==2.7.4
+six==1.11.0
+whitenoise==3.3.1
