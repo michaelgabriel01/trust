@@ -1,5 +1,6 @@
 django
 dj_database_url
-prettyconf
 gunicorn
+prettyconf
+psycopg2-binary
 whitenoise
