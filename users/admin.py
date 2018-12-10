@@ -5,7 +5,7 @@ from django.contrib.auth.admin import UserAdmin
 from .forms import UserCreationForm, UserChangeForm
 from .models import User
 
-class UserAdmin(UserAdmin):
+class UserAdmin1(UserAdmin):
     add_form = UserCreationForm
     form = UserChangeForm
     model = User
@@ -14,4 +14,4 @@ class UserAdmin(UserAdmin):
         'neighborhood', 'city', 'state', 'country', 'creation_date',
     ]
 
-admin.site.register(User, UserAdmin)
+admin.site.register(User, UserAdmin1)
