@@ -1,9 +1,8 @@
-# import uuid
 import hashlib
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-
+# Client registration model
 class User(AbstractUser):
     full_name = models.CharField(max_length=255, null=True)
     password1 = models.CharField(max_length=100, null=True)
