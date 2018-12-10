@@ -1,4 +1,4 @@
-# users
+# trust
     A Simple Register WebAPP
     This app generate a unique secret key for any registered user.
     The secret keys are generated with the user's CPF (Brazilian Identification Number). 
@@ -10,7 +10,7 @@
 # Installation and setup
     First clone the project.
     Then, go ahead and use the following commands
-    cd users/
+    cd trust/
     virtualenv env -p python3
     source env/bin/activate
     pip install -r requirements.txt
@@ -20,7 +20,7 @@
     Computer Sony Vaio CORE i5
     O.S Ubuntu 18.04lts
     Editor  SublimeText
-    Python version  3.7.0
+    Python version  3.6.7
     Django version  2.1.3
 
 # Basic Commands
