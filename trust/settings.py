@@ -120,8 +120,12 @@ USE_L10N = True
 
 USE_TZ = True
 
-# To be remove(only for development testing) 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Email sending setup
+EMAIL_HOST = config('EMAIL_HOST') 
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD') 
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
