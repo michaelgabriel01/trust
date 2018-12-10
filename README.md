@@ -16,6 +16,9 @@
     pip install -r requirements.txt
     python manage.py migrate 
 
+# Test
+    python manage.py test
+
 # Environment
     Computer Sony Vaio CORE i5
     O.S Ubuntu 18.04lts
