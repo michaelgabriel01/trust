@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div style="background-color: gray;">
+<br>
+<div align="center" style="background-color: #B2DAE5; padding: 40px;">
+{% if user.is_authenticated %}
+  <p align="right"><a href="{% url 'logout' %}">logout</a></p>
+  <h2>Hi {{ user.username }}!</h2><br>
+  <p>Your secret key is: </p><p><strong>{{ user.cpf_public_key }}</strong></p><br>
+  <p align="center">{% trans "Your personal link is:" %}</p>
+  <p align="center"><a href="/{{ request.user.username }}" target="_blank">https://{{ request.get_host }}/{{ request.user.cpf_public_key }}</a></p>
+  <br>
+  <strong>{% trans "Please save your secret key and personal link in a secure place" %}</strong>
+{% else %}
+  <a href="{% url 'login' %}">login</a> |
+  <a href="{% url 'signup' %}">register</a> 
+{% endif %}
+</div>
+<br>
+</div>
+{% endblock %}
